@@ -1,5 +1,3 @@
-divert(-1)changequote([,])
-
 __HEADER([Josef Kubin], [2018/05/17], [automaton])
 ___DESCR([])
 ___POINT([auxiliary start node to detect automaton inactivity])

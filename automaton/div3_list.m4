@@ -1,5 +1,3 @@
-divert(-1)changequote([,])
-
 __HEADER([Josef Kubin], [2018/05/15], [automaton])
 ___DESCR([accepts binary numbers divisible by three])
 ___POINT([automaton for a list])
@@ -7,7 +5,7 @@ ___POINT([note defn inside of m4wrap (DRY - Do not Repeat Yourself)])
 ___POINT([note $[]0 inside of REJECT])
 ___USAGE([m4 common.m4 div3_list.m4])
 
-#                    __0_                         __1_
+#                     _0_                          _1_
 #                    |  /                         |  /
 #   ___  epsilon    _V_/     1     ___     0     _V_/
 #  / S \--------->// A \\-------->/ B \-------->/ C \

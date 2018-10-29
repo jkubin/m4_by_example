@@ -3,10 +3,9 @@ divert(-1)changequote([,])
 __HEADER([Josef Kubin], [2018/05/16], [automaton])
 ___DESCR([a DFA for ab*a])
 ___POINT([state machine by macros; reject wrong word ASAP])
-___USAGE([m4 common.m4 macro_dfa.m4])
+___USAGE([m4 abbba_macro.m4])
 
-# napsat gramatiku
-#                     __b_
+#                      _b_
 #                     |  /
 #      ___     a     _V_/   a     _____
 # --->/ A \-------->/ B \------->// C \\

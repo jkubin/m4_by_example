@@ -1,16 +1,15 @@
 __HEADER([Josef Kubin], [2018/05/16], [automaton])
 ___DESCR([state machine accepts ab*a])
 ___POINT([state machine by macros])
-___USAGE([m4 common.m4 macro_dfa.m4])
+___USAGE([m4 common.m4 abbba_macro_2.m4])
 
-# napsat gramatiku
-#                     __b_
+#                      _b_
 #                     |  /
 #      ___     a     _V_/   a     _____
 # --->/ A \-------->/ B \------->// C \\
 #     \___/         \___/        \\___//
 #       |                           |
-#       |             __a,b_        |
+#       |              _a,b_        |
 #       |             |    /        |
 #      b|         ____V___/      a,b|
 #       '------->/ reject \<--------'
@@ -53,12 +52,6 @@ define([REJECT], [
 		[$*], [b], [],
 		[NOT_IN_ALPHABET($@)]
 	)
-])
-
-define([NOT_IN_ALPHABET], [
-	errprint(__file__:__line__[: error: symbol ‘$*’ is not in alphabet
-])
-	m4exit(1)
 ])
 
 # A → β
