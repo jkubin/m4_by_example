@@ -1,6 +1,6 @@
 define m4
 __HEADER([Josef Kubin], [2018/10/27], [java])
-___DESCR([generator java source code])
+___DESCR([java source code generator])
 ___POINT([comparison two source code generators: XSLT versus M4])
 ___USAGE([make h])
 endef

@@ -1,0 +1,18 @@
+html {
+	font-size: 120%;
+}
+nav ul li {
+	display: inline;
+}
+ol li div {
+	width: 300px;
+	float: left;
+}
+ol li {
+	clear: both;
+	width: 800px;
+	padding: 3px;
+}
+ol li:nth-child(odd) {
+	background: #eee;
+}
