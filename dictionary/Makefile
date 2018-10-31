@@ -66,7 +66,7 @@ debug dbg:
 #:cl/clean	removes generated files
 .PHONY: clean cl
 clean cl:
-	$(RM) $(DEBUG_FILE) forward.* reverse.*
+	$(RM) $(DEBUG_FILE) forward* reverse*
 
 
 #:h/help	prints this text

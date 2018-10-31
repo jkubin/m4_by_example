@@ -25,22 +25,20 @@ ___POINT([learn M4 while having fun])
 # sort by third column
 # :'<,'>! sort -k 4,4 -t '['
 #
-# set Vim registers to append flags
-# :let @v='m`$i, [v]``'
+# set Vim register to append flags
 # :let @i='m`$i, [i]``'
-# :let @p='m`$i, [p]``'
-# :let @h='m`$i, [h]``'
+# ...
 #
-# or select visualy following characters and save them to registers viph
+# or select visualy following characters and save them to registers din
+#
+# m`$i, [d]``
+# "dy
 #
 # m`$i, [i]``
 # "iy
 #
 # m`$i, [n]``
 # "ny
-#
-# m`$i, [d]``
-# "dy
 
 # fifth column is a set of FLAGS: [dni]
 # __BRNO__([A], [inapropriate],             [A], [inapropriate], [i])
