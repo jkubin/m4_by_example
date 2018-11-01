@@ -3,7 +3,7 @@ divert(-1)changequote([,])
 __HEADER([Josef Kubin], [2018/10/31], [dictionary])
 ___DESCR([conversion M4 database to CSV])
 ___POINT([the most trivial transformation])
-___USAGE([m4 dict_csv.m4 ...mc > ...csv])
+___USAGE([m4 csv.m4 ...])
 
 # β rule
 define([DICTIONARY], [dnl

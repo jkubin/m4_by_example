@@ -3,7 +3,7 @@ divert(-1)changequote([,])
 __HEADER([Josef Kubin], [2018/10/30], [dictionary])
 ___DESCR([])
 ___POINT([])
-___USAGE([m4 fwd_rev.m4 dict_fwd.m4 ...mc > ...mc])
+___USAGE([m4 -DFLAGS=... fwd_rev.m4 ...])
 
 define([BRAC], [[$@]])
 

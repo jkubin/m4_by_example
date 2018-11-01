@@ -1,7 +1,7 @@
 define m4
 __HEADER([Josef Kubin], [2018/05/12], [dictionary])
 ___DESCR([dictionary in both direction])
-___POINT([M4 dictionary to different kind of source code])
+___POINT([M4 dictionary])
 ___USAGE([make h])
 endef
 
@@ -32,25 +32,25 @@ TARGETS += reverse.xml
 .PHONY: all
 all: $(TARGETS)
 
-%_raw.xml: dict_xml_raw.m4 %.mc
+%_raw.xml: xml_raw.m4 %.mc
 	m4 $^ > $@
 
-%.xml: common.m4 dict.m4 dict_xml.m4 %.mc
+%.xml: common.m4 dict.m4 xml.m4 %.mc
 	m4 $^ > $@
 
-%.csv: dict_csv.m4 %.mc
+%.csv: csv.m4 %.mc
 	m4 $^ > $@
 
-%_loop.csv: dict_csv_loop.m4 %.mc
+%_loop.csv: csv_loop.m4 %.mc
 	m4 $^ > $@
 
-%.c: common.m4 dict.m4 c_def.m4 dict_c.m4 %.mc
+%.c: common.m4 dict.m4 c_def.m4 c.m4 %.mc
 	m4 $^ > $@
 
-%.html: common.m4 dict.m4 html_def.m4 dict_html.m4 %.mc
+%.html: common.m4 dict.m4 html_def.m4 html.m4 %.mc
 	m4 -DTARGET_FILE='$@' $^ > $@
 
-%.mc: Makefile fwd_rev.m4 dict_%.m4 $(DICT_SRC)
+%.mc: Makefile fwd_rev.m4 %.m4 $(DICT_SRC)
 	m4 $(DICT_FLAGS) $(wordlist 2, $(words $^), $^) > $@
 
 %.o: %.c
@@ -66,7 +66,7 @@ debug dbg:
 #:cl/clean	removes generated files
 .PHONY: clean cl
 clean cl:
-	$(RM) $(DEBUG_FILE) forward* reverse*
+	$(RM) $(DEBUG_FILE) *.{xml,html,c,o,csv} forward.mc reverse.mc
 
 
 #:h/help	prints this text

@@ -3,7 +3,7 @@ divert(-1)changequote([,])
 __HEADER([Josef Kubin], [2018/05/21], [messages])
 ___DESCR([messages to xml format])
 ___POINT([branching; fast stream version; NO temporary data in memory!])
-___USAGE([m4 xml.m4 messages.mc > messages.xml])
+___USAGE([m4 xml.m4 messages.mc])
 
 define([DO_NOT_EDIT], [DO NOT EDIT! Generated automatically!])
 

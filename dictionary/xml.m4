@@ -2,7 +2,7 @@ __HEADER([Josef Kubin], [2018/10/31], [dictionary])
 __THANKS([])
 ___DESCR([])
 ___POINT([])
-___USAGE([m4 common.m4 dict.m4 dict_xml.m4])
+___USAGE([m4 common.m4 dict.m4 xml.m4])
 
 # define counters for divert_index
 define([DICT_DIVERT_COUNTER], defn([BETA_COUNT_UP]))

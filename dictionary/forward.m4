@@ -1,7 +1,7 @@
 __HEADER([Josef Kubin], [2018/10/30], [dictionary])
 ___DESCR([])
 ___POINT([])
-___USAGE([m4 -DFLAGS=... fwd_rev.m4 dict_fwd.m4 src.mc > src_fwd.mc])
+___USAGE([m4 -DFLAGS=... fwd_rev.m4 forward.m4 ...])
 
 define([DICTIONARY], [dnl
 REGISTER_DICTIONARY_RULE([$0])dnl

@@ -3,10 +3,9 @@
 divert(-1)changequote([,])
 
 __HEADER([Josef Kubin], [2018/10/31], [dictionary])
-__THANKS([])
-___DESCR([])
-___POINT([])
-___USAGE([m4 dict_xml_raw.m4 ...mc > ...xml])
+___DESCR([a simple xml generator])
+___POINT([simplicity])
+___USAGE([m4 xml_raw.m4 ...mc])
 
 # β rule
 define([DICTIONARY], [dnl

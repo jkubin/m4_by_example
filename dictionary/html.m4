@@ -3,7 +3,7 @@
 __HEADER([Josef Kubin], [2018/10/24], [dictionary])
 ___DESCR([fast and small html generator])
 ___POINT([dictionary letters as associative to buffers])
-___USAGE([m4 common.m4 dict.m4 dict_html.m4 dict_...mc > ...html])
+___USAGE([m4 common.m4 dict.m4 html_def.m4 html.m4 ...mc])
 
 # β rule
 define([DICTIONARY], [

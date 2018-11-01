@@ -1,7 +1,7 @@
 __HEADER([Josef Kubin], [2018/10/24], [dictionary])
 ___DESCR([])
 ___POINT([])
-___USAGE([m4 array.m4])
+___USAGE([m4 common.m4 dict.m4 c_def.m4 c.m4 ...])
 
 # β rule
 define([KEY_NAME_VALUE_NAME], [

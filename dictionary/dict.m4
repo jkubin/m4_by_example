@@ -3,6 +3,7 @@ ___DESCR([])
 ___POINT([])
 ___USAGE([m4 common.m4 dict.m4 ...])
 
+# glue two parts to create URL
 define([PROJECT_URL],	defn([PROJECT_ROOT_URL])[dictionary])
 
 # definitions for C language (expanded by indir())
