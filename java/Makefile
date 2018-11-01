@@ -8,7 +8,7 @@ endef
 TARGETS += Address_XSLT.java
 TARGETS += Address_M4_1.java
 TARGETS += Address_M4_2.java
-TARGETS += dependent.java
+TARGETS += Address_M4_3.java
 
 .SUFFIXES:
 
@@ -23,7 +23,7 @@ Address_XSLT.java: dependentObject.xslt AddressDO.xml
 Address_M4%.java: dependentObject%.m4 AddressDO.mc
 	m4 $^ > $@
 
-dependent.java: java_def.m4 dependentObject_3.m4 java_src.mc
+Address_M4%.java: java.m4 dependentObject%.m4 java.mc
 	m4 $^ > $@
 
 

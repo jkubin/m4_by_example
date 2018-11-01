@@ -1,9 +1,9 @@
 divert(-1)changequote([,])
 
 __HEADER([Josef Kubin], [2018/10/27], [java])
-___DESCR([define diverts])
+___DESCR([define indices for output buffers])
 ___POINT([common definitions in separated file])
-___USAGE([m4 java_def.m4 ...])
+___USAGE([m4 java.m4 ...])
 
 # β rule
 define([BETA_COUNT_UP], [dnl

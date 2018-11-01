@@ -54,7 +54,7 @@ debug dbg:
 #:cl/clean	removes generated files
 .PHONY: clean cl
 clean cl:
-	$(RM) $(DEBUG_FILE) $(TARGETS) *.txt
+	$(RM) $(DEBUG_FILE) $(TARGETS)
 
 
 #:h/help	prints this text
