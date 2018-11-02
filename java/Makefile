@@ -5,7 +5,7 @@ ___POINT([comparison two source code generators: XSLT versus M4])
 ___USAGE([make h])
 endef
 
-TARGETS += Address_XSLT.java
+TARGETS += AddressXSLT.java
 TARGETS += Address_M4_1.java
 TARGETS += Address_M4_2.java
 TARGETS += Address_M4_3.java
@@ -17,13 +17,13 @@ TARGETS += Address_M4_3.java
 .PHONY: all
 all: $(TARGETS)
 
-Address_XSLT.java: dependentObject.xslt AddressDO.xml
+AddressXSLT.java: dependentObject.xslt AddressDO.xml
 	xsltproc $^ > $@
 
-Address_M4%.java: dependentObject%.m4 AddressDO.mc
+Address_M4%.java: dependentObject%.m4 Address_DO.mc
 	m4 $^ > $@
 
-Address_M4%.java: java.m4 dependentObject%.m4 java.mc
+Address_M4_3.java: java.m4 dependentObject_3.m4 java.mc
 	m4 $^ > $@
 
 

@@ -4,7 +4,7 @@ __HEADER([Josef Kubin], [2018/10/27], [java])
 __THANKS([https://docstore.mik.ua/orelly/xml/jxslt/ch08_05.htm])
 ___DESCR([generating the source code with two different paradigms])
 ___POINT([XSLT versus M4 (version 2)])
-___USAGE([m4 dependentObject_2.m4 AddressDO.mc > Address_M4_2.java])
+___USAGE([m4 dependentObject_2.m4 Address_DO.mc > Address_M4_2.java])
 
 define([PUBLIC_CLASS],       1)
 define([PRIVATE_ATTRIB],     2)

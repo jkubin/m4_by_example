@@ -2,7 +2,7 @@ __HEADER([Josef Kubin], [2018/10/27], [java])
 __THANKS([https://docstore.mik.ua/orelly/xml/jxslt/ch08_05.htm])
 ___DESCR([generating the source code with two different paradigms])
 ___POINT([XSLT versus M4 (version 3)])
-___USAGE([m4 java_def.m4 dependentObject_3.m4 java_src.mc > dependent.java])
+___USAGE([m4 java.m4 dependentObject_3.m4 java.mc > Address_M4_3.java])
 
 # A → β
 define([SET_ATTRIBUTES_AND_METHODS], [

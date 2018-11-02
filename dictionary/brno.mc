@@ -51,14 +51,14 @@ SET_QUOTING_BACK[]dnl
 define([BRNO], defn([DICTIONARY]))dnl
 
 BRNO([A], [agoška],                       [A], [agentura])
-BRNO([A], [ajda],                         [A], [AIDS])
+BRNO([A], [ajda],                         [A], [AIDS], [i])
 BRNO([A], [ajfelky],                      [P], [pařížské ženy])
 BRNO([A], [ajsůvka],                      [L], [led])
 BRNO([A], [ajznboňák],                    [Ž], [železničář])
 BRNO([A], [Akáda],                        [A], [Akademická vinárna])
 BRNO([A], [aloše],                        [A], [alimenty])
 BRNO([A], [androš],                       [U], [underground])
-BRNO([A], [angoráky],                     [Z], [zarudlé oči])
+BRNO([A], [angoráky],                     [Z], [zarudlé oči], [n])
 BRNO([A], [apec],                         [A], [aparát])
 BRNO([A], [apec],                         [Z], [zvuková aparatura hudební skupiny])
 BRNO([A], [arab],                         [B], [bicykl (starý, nemoderní)])

@@ -3,10 +3,10 @@ divert(-1)changequote([,])
 __HEADER([Josef Kubin], [2018/05/10], [array])
 ___DESCR([generates initial hex array for an external memory])
 ___POINT([macro evaluated only once but used many times])
-___POINT([left recursion (generally not recommended); print the result into brackets])
-___USAGE([m4 -DLENGTH=$[$RANDOM & 0x1f] array_gen2.m4])
+___POINT([left recursion (generally not recommended); how to print BRAC(LENGHT)])
+___USAGE([m4 -DLENGTH=$[$RANDOM & 0x1f] array_2.m4])
 
-define([SEQ], [ifelse($1, 0, [[0x00, ]], [$0(decr($1))ifelse(eval($1 & 0xf), 0, [
+define([SEQ], [ifelse([$1], [0], [[0x00, ]], [$0(decr($1))ifelse(eval($1 & 0xf), 0, [
 ])[0x]eval($1, 16, 2)[, ]])])
 
 # evaluate array only once

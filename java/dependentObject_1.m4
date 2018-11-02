@@ -4,7 +4,7 @@ __HEADER([Josef Kubin], [2018/10/27], [java])
 __THANKS([https://docstore.mik.ua/orelly/xml/jxslt/ch08_05.htm])
 ___DESCR([generating the source code with two different paradigms])
 ___POINT([XSLT versus M4 (version 1)])
-___USAGE([m4 dependentObject_1.m4 AddressDO.mc > Address_M4_1.java])
+___USAGE([m4 dependentObject_1.m4 Address_DO.mc > Address_M4_1.java])
 
 # A rule
 # A → β
@@ -41,17 +41,17 @@ define([NEXT], [
 define([DEPENDENT_OBJECT], [
 	# A → β
 	define([PROPERTY], defn([FIRST]))
-	define([$0], [$1])
+	define([NAME], [$1])
 ])
 
 m4wrap([
 	divert(0)dnl
-public class DEPENDENT_OBJECT implements java.io.Serializable {
+public class NAME implements java.io.Serializable {
 undivert(1)
 	/**
 	 * Construct a new dependent object instance.
 	 */
-	public DEPENDENT_OBJECT[](undivert(2)) {
+	public NAME[](undivert(2)) {
 undivert(3)dnl
 	}
 undivert(4)

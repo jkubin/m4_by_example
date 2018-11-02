@@ -12,7 +12,7 @@ ___USAGE([m4 common.m4 karel_hruby.m4 heredoc.m4 karel_hruby.mc > heredoc.txt &&
 
 define([BETA_INIT], [
 	divert($0_SCN)dnl
-cat <<EOF>> [$0].txt
+cat <<EOF>> [$0].scn
 [$1	$2]
 divert(-1)
 

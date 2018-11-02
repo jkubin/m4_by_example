@@ -18,7 +18,7 @@ define([BETA_INIT], [
 	divert($0_SCN)dnl
 <$0_WRAP code="$0_CODE">
 <name>$0_NAME</name>
-<item>$2</item>
+	<item>$2</item>
 divert(-1)
 
 	# push item to the stack named "OPENED_SECTION" to close it later
@@ -31,7 +31,7 @@ divert(-1)
 # β rule
 define([BETA_ITEM], [
 	divert($0_SCN)dnl
-<item>$2</item>
+	<item>$2</item>
 divert(-1)
 ])
 
