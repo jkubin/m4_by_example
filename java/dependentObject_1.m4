@@ -6,7 +6,6 @@ ___DESCR([generating the source code with two different paradigms])
 ___POINT([XSLT versus M4 (version 1)])
 ___USAGE([m4 dependentObject_1.m4 Address_DO.mc > Address_M4_1.java])
 
-# A rule
 # A → β
 define([COMMON], [
 	divert(1)dnl
@@ -36,7 +35,10 @@ define([NEXT], [
 , $2 $1[]divert(-1)
 ])
 
-# A rule
+#      _______      ______
+# --->/ FIRST \--->/ NEXT \----,
+#     \_______/    \______/<---'
+
 # A → β
 define([DEPENDENT_OBJECT], [
 	# A → β

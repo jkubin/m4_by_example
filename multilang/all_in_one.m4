@@ -16,7 +16,7 @@ define([LANG_LOOP], [
 		divert(0)dnl
  "ARG2($1)",
 divert(-1)
-		# right recursion
+		# recursion
 		$0(shift($@))
 	])
 ])

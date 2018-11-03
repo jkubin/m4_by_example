@@ -47,6 +47,10 @@ define([NEXT], [
 , $2 $1[]divert(-1)
 ])
 
+#      _______      ______
+# --->/ FIRST \--->/ NEXT \----,
+#     \_______/    \______/<---'
+
 # A → β
 define([DEPENDENT_OBJECT], [
 

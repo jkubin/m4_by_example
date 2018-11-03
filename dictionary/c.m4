@@ -59,6 +59,10 @@ divert(-1)
 	define([$0], defn([BETA_ITEM]))
 ])
 
+#      ____________      ___________
+# --->/ DICTIONARY \--->/ BETA_ITEM \----,
+#     \____________/    \___________/<---'
+
 # β rule
 define([BETA_ITEM], defn([KEY_NAME_VALUE_NAME])[
 

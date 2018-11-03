@@ -4,7 +4,7 @@
 define([ERROR_IDENT], [error])
 define([WARNING_IDENT], [warning])
 define([INFO_IDENT], [info])
-define([NOT_AVAILABLE], [N/A])
+define([NOT_AVAILABLE], [n/a])
 
 #     123456789012345678901234567890123456789012345678
 ERROR(NA, [...], [

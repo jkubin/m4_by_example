@@ -42,6 +42,10 @@ define([NEXT], [
 , $2 $1[]divert(-1)
 ])
 
+#      _______      ______
+# --->/ FIRST \--->/ NEXT \----,
+#     \_______/    \______/<---'
+
 # β rule
 define([CREATE_NEW_DEPENDENT_OBJ], [
 

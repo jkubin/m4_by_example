@@ -11,6 +11,11 @@ pushdef([], [with a next strange macro on the stack of emptiness ...])
 pushdef([], [M4 seems to be crazy as fractals])
 pushdef([], [empty macro name is a valid name])
 pushdef([], [this is the top of stack of nothingness])
+pushdef([], [A])
+
+define([A], [a`'B])
+define([B], [b`'C])
+define([C], [c])
 
 # dump a stack
 define([DUMP], [ifdef([$1], [indir([$1])
@@ -21,8 +26,9 @@ our empty macro is ifdef([], [defined], [not defined])
 
 []	<--- This is a futile attempt to expand emptiness to matter, we pray to wrong gods...
 
-indir([])	<--- Our god is indir, we have to pray for indir!
+indir([])	indir expands nonterminal [A] → A
+defn([])	defn without expansion of [A]
 
-DUMP([])	<--- dump nothingness
+#DUMP([])	<--- dump nothingness
 
 our empty macro is ifdef([], [defined], [not defined])

@@ -94,6 +94,7 @@ define([CLEANING], [
 
 	ifdef([REGISTERED], [
 
+		# undefine remembered macro
 		undefine(defn([REGISTERED]))
 
 		# remove registered macro from stack
