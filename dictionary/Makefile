@@ -22,7 +22,7 @@ TARGETS += reverse.html
 TARGETS += reverse.o
 TARGETS += reverse.xml
 
- DICT_FLAGS = -DFLAGS=n
+# DICT_FLAGS = -DFLAGS=n
 
 .SECONDARY:
 .SUFFIXES:
