@@ -3,16 +3,16 @@ divert(-1)changequote([,])
 __HEADER([Josef Kubin], [2018/11/03], [counter])
 ___DESCR([])
 ___POINT([])
-___USAGE([m4 counters_demo.m4])
+___USAGE([m4 demo.m4])
 
-define([COUNT_UP], [dnl
-	define([$0_COUNTER], $1)dnl
-	define([$0], [$0_COUNTER[]define([$0_COUNTER], incr($0_COUNTER))])dnl
+define([COUNT_UP], [
+	define([$0_COUNTER], $1)
+	define([$0], [$0_COUNTER[]define([$0_COUNTER], incr($0_COUNTER))])
 ])
 
-define([COUNT_DOWN], [dnl
-	define([$0_COUNTER], $1)dnl
-	define([$0], [$0_COUNTER[]define([$0_COUNTER], decr($0_COUNTER))])dnl
+define([COUNT_DOWN], [
+	define([$0_COUNTER], $1)
+	define([$0], [$0_COUNTER[]define([$0_COUNTER], decr($0_COUNTER))])
 ])
 
 # define counters

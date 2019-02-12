@@ -7,7 +7,7 @@ ___USAGE([m4 dry.m4])
 
 define([DRY], [[($0)] Do not Repeat Yourself!])
 define([TRY], defn([DRY]))
-define([DIE], [Duplication Is Evil] defn([DRY]))
+define([DIE], [[($0)] Duplication Is Evil] defn([DRY]))
 
 divert(0)dnl
 DRY
